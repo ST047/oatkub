@@ -32,17 +32,43 @@
     <center>
     <h1>OatKub Analysis</h1>
       <div class="tradingview-widget-container">
-        <table><tr><td><script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-{
-    "interval": "5m",
-    "width": 425,
-    "isTransparent": false,
-    "height": 450,
-    "symbol": "BITKUB:BTCTHB",
-    "showIntervalTabs": true,
-    "locale": "th_TH",
-    "colorTheme": "dark"
-}
+        <table><tr><td><script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+<script type="text/javascript">
+    new TradingView.widget(
+        {
+            "width": 540,
+            "height": 360,
+            "symbol": "BITKUB:BTCTHB",
+            "interval": "60",
+            "timezone": "Asia/Bangkok",
+            "theme": "dark",
+            "style": "1",
+            "locale": "th_TH",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "studies": [
+                {
+                    "id": "MAExp@tv-basicstudies",
+                    "inputs": {
+                        "length": 50
+                    }
+                },
+                {
+                    "id": "MAExp@tv-basicstudies",
+                    "inputs": {
+                        "length": 100
+                    }
+                },
+                {
+                    "id": "MAExp@tv-basicstudies",
+                    "inputs": {
+                        "length": 200,
+                    }
+                }
+            ]
+        }
+    );
 </script></td></tr></table>
                     </div>
                     </center>
